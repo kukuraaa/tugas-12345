@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar";
 import Card from "./Components/Card";
 import ProductCard from "./Components/ProductCard";
 import Counter from "./Components/Counter";
+import Form from "./Components/Form";
 
 import flower from "./assets/building.jpg";
 import bunny from "./assets/Bunny.jpg";
@@ -24,8 +25,6 @@ function App() {
 
         <div className="content">
           <Card />
-
-          <Counter />
 
           <h2>Daftar Produk</h2>
 
@@ -65,7 +64,9 @@ function App() {
               harga="Rp120.000"
               gambar={mug}
             />
+            <Counter />
           </div>
+            <Form />
         </div>
       </main>
 
