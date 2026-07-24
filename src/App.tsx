@@ -8,12 +8,12 @@ import ProductCard from "./Components/ProductCard";
 import Counter from "./Components/Counter";
 import Form from "./Components/Form";
 
-import flower from "./assets/building.jpg";
-import bunny from "./assets/Bunny.jpg";
-import keychain from "./assets/Illit Keychain.jpg";
-import lego from "./assets/olivia.jpg";
-import shoes from "./assets/puma.jpg";
-import mug from "./assets/mug.jpg";
+import barbie from "./assets/barbie.png";
+import building from "./assets/building.jpg";
+import van from "./assets/LEGO Van Gogh.jpg";
+import lego from "./assets/Olivia Rodrigo's LEGO sets.jpg";
+import way from "./assets/MilkyWay LEGO.png";
+import japan from "./assets/japan LEGO.png";
 
 function App() {
   return (
@@ -29,40 +29,41 @@ function App() {
           <h2>Daftar Produk</h2>
 
           <div className="products">
+
             <ProductCard
-              nama="Flower Bouquet Building Set"
+              nama="Botanical Flower Bouquet"
+              harga="Rp699.000"
+              gambar={building}
+            />
+
+              <ProductCard
+              nama="Princess Castle & Royal Pets"
               harga="Rp450.000"
-              gambar={flower}
+              gambar={barbie}
             />
 
-            <ProductCard
-              nama="IKEA Bunny"
-              harga="Rp199.000"
-              gambar={bunny}
-            />
-
-            <ProductCard
-              nama="Illit Keychain"
-              harga="Rp75.000"
-              gambar={keychain}
-            />
-
-            <ProductCard
-              nama="Olivia Rodrigo LEGO"
+              <ProductCard
+              nama="Olivia Rodrigo's Guitar"
               harga="Rp850.000"
               gambar={lego}
             />
 
             <ProductCard
-              nama="Puma Shoes"
-              harga="Rp1.200.000"
-              gambar={shoes}
+              nama="The Starry Night Art"
+              harga="Rp75.000"
+              gambar={van}
             />
 
             <ProductCard
-              nama="Starbucks Kyoto Mug"
-              harga="Rp120.000"
-              gambar={mug}
+              nama="The Milky Way Galaxy"
+              harga="Rp1.200.000"
+              gambar={way}
+            />
+
+            <ProductCard
+              nama="Japanese Cherry Blossom Landscape"
+              harga="Rp920.000"
+              gambar={japan}
             />
             <Counter />
           </div>

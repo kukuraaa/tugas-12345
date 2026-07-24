@@ -1,9 +1,9 @@
-import humahuma from "../assets/humahuma.jpeg";
+import Lego from "../assets/Lego.jpg";
 
 function Card() {
   return (
     <div className="card">
-      <img src={humahuma} alt="Foto Profil" />
+      <img src={Lego} alt="Foto Profil" />
       <h2>Khumaera</h2>
       <p>Frontend Developer</p>
     </div>
