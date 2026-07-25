@@ -84,17 +84,19 @@ function Form() {
         </div>
       </form>
 
-      <div className="hasil">
-        <h3>Hasil</h3>
+     {hasil.nama && hasil.email && (
+        <div className="hasil">
+          <h3>Data yang Dimasukkan</h3>
 
-        <p>
-          <strong>Nama :</strong> {hasil.nama}
-        </p>
+          <p>
+            <strong>Nama :</strong> {hasil.nama}
+          </p>
 
-        <p>
-          <strong>Email :</strong> {hasil.email}
-        </p>
-      </div>
+          <p>
+            <strong>Email :</strong> {hasil.email}
+          </p>
+        </div>
+      )}
     </div>
   );
 }
